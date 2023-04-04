@@ -2,15 +2,17 @@ const setCount = document.getElementById('set-count');
 // const endDate = document.getElementById('end-date');
 const btn = document.getElementById('btn');
 endDate = '4 Apr 2023 10:00 AM'
+document.getElementById('end-date').innerText=endDate;
 function fun1(){
     endDate=setCount.value
+    document.getElementById('end-date').innerText=endDate;
     // endDate.innerHtml=setCount.value
 }
 
 btn.addEventListener('click',fun1);
 
 // endDate = '4 Apr 2023 10:00 AM'
-document.getElementById('end-date').innerText=endDate;
+// document.getElementById('end-date').innerText=endDate;
 // document.getElementById('end-date').innerHTML=endDate;
 const input = document.querySelectorAll('input');
 
